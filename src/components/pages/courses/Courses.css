@@ -1,0 +1,4 @@
+.courses-box{
+    display: flex;
+    flex-direction: column; 
+}

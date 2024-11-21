@@ -1,0 +1,101 @@
+.community__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.community__header .text {
+    margin-top: 100px;
+}
+
+.community__header .text p {
+    max-width: 800px;
+}
+
+.community__header-img {
+    position: relative;
+    max-width: 500px;
+    margin-right: 100px;
+}
+
+.community__header-img .telegram {
+    max-width: 250px;
+    max-height: 250px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: -30%;
+    bottom: -30%;
+}
+
+.community__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.community__info-img {
+    max-width: 400px;
+}
+
+.community__advantages {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.community__advantages-advantages, .community__advantages-price {
+    max-width: 48%;
+}
+
+.community__advantages-advantages li, .community__advantages-price p {
+    margin-bottom: 30px;
+}
+
+@media(width <= 1400px){
+    .community__info .text{
+        max-width: 800px !important;
+    }
+}
+@media(width <= 1200px){
+    .community__info .text{
+        max-width: 700px !important;
+    }
+}
+@media(width <= 1050px){
+    .community__info .text {
+        max-width: 500px !important;
+    }
+}
+@media(width <= 1000px){
+    .course-page__programm-img{
+        display: none;
+    }
+}
+
+@media(width <= 900px){
+    .community__info{
+        flex-wrap: wrap-reverse; 
+        justify-content: center;
+    }
+    .community__info .text {
+        max-width: 100% !important;
+    }
+    .community__header{
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 150px !important; 
+    }
+    .community__advantages{
+        gap: 30px;
+        flex-wrap: wrap; 
+    }
+    .community__advantages-advantages, .community__advantages-price{
+        max-width: 100%;
+    }
+    .community__header .text{
+        margin-top: 50px;
+    }
+}

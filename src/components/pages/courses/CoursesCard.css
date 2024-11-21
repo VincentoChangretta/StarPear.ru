@@ -1,0 +1,161 @@
+.courses-card {
+    position: relative;
+    display: flex;
+    gap: 30px;
+    padding: 40px;
+    max-width: 1300px;
+    border-radius: 50px;
+    color: #1a1a1a;
+    background-color: #fff;
+    transition: .5s;
+    cursor: pointer;
+    animation: cardMove 1.5s ease forwards;
+    overflow: hidden;
+}
+
+.courses-card:hover {
+    transform: translateY(10px);
+}
+
+.courses-card:nth-of-type(1) {
+    z-index: 10;
+    background: linear-gradient(to right, #ccc, #fff);
+    box-shadow: 0px 0px 55px rgba(0, 0, 0, .5);
+    --bg-image: url(./../../../images/kant.webp) 100px -50px / cover no-repeat;
+}
+
+.courses-card:nth-of-type(2) {
+    z-index: 5;
+    translate: 0 -20px;
+    margin-left: auto;
+    background: linear-gradient(to right, #fff, #ccc);
+    box-shadow: 0px 0px 55px rgba(0, 0, 0, .5);
+    --bg-image: url(./../../../images/nietzsche-r.webp) 10px center / cover no-repeat;
+}
+
+.courses-card:nth-of-type(3) {
+    background: linear-gradient(to right, #ccc, #fff);
+    translate: 0 -40px;
+    margin-left: 70px;
+    --bg-image: url(./../../../images/hegel.webp) center / cover no-repeat;
+}
+
+.courses-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: -56px;
+    max-width: 500px;
+    width: 100%;
+    background: var(--bg-image);
+}
+
+.img-box {
+    max-width: 330px;
+}
+
+.img-box img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+    display: flex;
+}
+
+.courses-card .text-box {
+    position: relative;
+    max-width: 100%;
+    width: 100%;
+    z-index: 50;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    backdrop-filter: blur(10px) brightness(130%);
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 30px;
+}
+
+.courses-card .text-box h4 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.courses-card .text-box p:not(.text-box__description) {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.text-box__description {
+    font-size: 18px;
+    max-width: 800px;
+    margin-bottom: 30px;
+    font-weight: 500;
+
+}
+
+.courses-card .btn {
+    margin-top: auto;
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+@media (width <=1500px) {
+    .courses-card {
+        max-width: 1200px;
+    }
+}
+
+@media (width <=1380px) {
+    .courses-card {
+        max-width: 100%;
+    }
+
+    .courses-card:nth-of-type(2) {
+        margin-left: 0;
+    }
+
+    .courses-card:nth-of-type(3) {
+        margin-left: 0;
+    }
+}
+
+@media (width <=1145px) {
+    .courses .img-box{
+        display: none;
+    }
+    .courses-card .text-box{
+        max-width: 650px;
+    }
+}
+
+@media(width <= 870px){
+    .courses-box{
+        gap: 30px;
+    }
+    .courses-card{
+        padding: 20px;
+    }
+    .courses-card:nth-of-type(2) {
+        translate: 0;
+    }
+
+    .courses-card:nth-of-type(3) {
+        translate: 0;
+    }
+}
+@media(width <= 700px){
+    .courses-card .text-box h4{
+        font-size: 25px;
+    }
+}
+
+@media(width <= 400px){
+    .courses-card .text-box h4{
+        font-size: 20px;
+    }
+    .courses-card .text-box p:not(.text-box__description){
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,13 @@
+.input-box{
+    padding: 20px;
+    border-radius: 30px;
+    background-color: #fff;
+}
+.input-box input {
+    display: block;
+    font: 400 18px "Montserrat", sans-serif;
+    color: #1a1a1a;
+    background-color: transparent;
+    border: none;
+    outline: 1px solid transparent;
+}

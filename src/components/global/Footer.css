@@ -1,0 +1,29 @@
+.footer__inner {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sm-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.vcDevs {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+@media (width <=700px) {
+    .sm-list {
+        gap: 30px;
+    }
+}
+
+@media (width <=400px) {
+    .sm-list {
+        gap: 15px;
+    }
+}
