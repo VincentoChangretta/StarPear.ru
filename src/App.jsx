@@ -9,7 +9,7 @@ import { Community } from './components/pages/community/Community'
 import { Biography } from './components/pages/biography/Biography'
 import { Registration } from './components/pages/registraion/Registration'
 import { Social } from './components/pages/social/Social'
-import { PrivacyPolicyPage } from './components/pages/PrivacyPolicy/PrivacyPolicy'
+import { PrivacyPolicy } from './components/pages/PrivacyPolicy/PrivacyPolicy'
 
 function App() {
 
@@ -29,7 +29,7 @@ function App() {
             <Route path='/biography' element={<Biography />}></Route>
             <Route path='/social-media' element={<Social />}></Route>
             <Route path='/registration' element={<Registration />}></Route>
-            <Route path='/privacy-policy' element={<PrivacyPolicyPage />}></Route>
+            <Route path='/privacy-policy' element={<PrivacyPolicy />}></Route>
             <Route path='*' element={<Navigate to="/" replace />} />
           </Routes>
         </main>
