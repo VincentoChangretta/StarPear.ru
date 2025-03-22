@@ -65,6 +65,30 @@ a {
   text-decoration: underline;
 }
 
+.tiv__list {
+  padding-left: 25px !important;
+  list-style: number;
+  padding-left: 10px;
+  margin-bottom: 30px;
+}
+
+.gic__list {
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+
+.gic__list li {
+  position: relative;
+  padding-left: 0px;
+}
+
+.gic__list li::before {
+  content: "-";
+  position: absolute;
+  top: 0;
+  left: -10px;
+}
+
 .container {
   max-width: 1520px;
   padding: 0 10px;
@@ -111,7 +135,9 @@ a {
 .main section h2 {
   max-width: 950px;
   font-size: 45px;
-  margin-bottom: 50px;
+  margin: 0 auto 50px;
+  text-align: center;
+  text-wrap: balance;
 }
 
 .main .text-box {
@@ -134,24 +160,27 @@ a {
   object-fit: cover;
 }
 
-.privacy-policy-page p{
+.privacy-policy-page p {
   margin: 20px 0;
 }
 
 
 @media(width <=500px) {
-  .main section .text h1{
-        font-size: 35px;
+  .main section .text h1 {
+    font-size: 35px;
   }
 }
+
 @media(width <=450px) {
   .main section h2 {
     font-size: 35px;
   }
-  .section-with-padding h3{
+
+  .section-with-padding h3 {
     font-size: 25px !important;
   }
 }
+
 @media(width <=400px) {
   .main section h2 {
     font-size: 28px;

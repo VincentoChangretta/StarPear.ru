@@ -1,0 +1,80 @@
+.container {}
+
+.course-inner {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.course-img {
+    max-width: 400px;
+    margin: 0 auto 40px;
+}
+
+.course-img img {
+    border-radius: 40%;
+    box-shadow: 0 0 25px rgba(255, 255, 255, .1);
+    filter: grayscale(100);
+    animation: philosophyAnim 3s ease infinite;
+}
+
+.course-title-box {
+    text-align: center;
+    text-wrap: balance;
+}
+
+.course-title-box h4 {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.course-link {
+    display: inline-block;
+    padding: 3px 10px;
+    color: #fff;
+    background-color: #1a1a1a;
+    margin-left: 5px;
+    border-radius: 20px;
+}
+
+
+.course-accordion-box {
+    margin-bottom: 30px;
+}
+
+.course-accordion {
+    text-wrap: pretty;
+}
+
+.course-accordion .summary {
+    font-size: 20px;
+    font-family: inherit;
+}
+
+.course-accordion .details {
+    background: #E8E8E8;
+}
+
+.course-questions {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.text ol {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+@keyframes philosophyAnim {
+    50% {
+        filter: grayscale(100) brightness(130%);
+        scale: 1.05;
+    }
+
+    100% {
+        filter: grayscale(100) brightness(100%);
+        scale: 1;
+    }
+}

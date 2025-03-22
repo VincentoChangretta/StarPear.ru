@@ -1,8 +1,10 @@
 .biography {}
 
 .biography h2 {
-    margin-bottom: 20px !important;
+    text-align: left !important;
+    margin: 0 0 20px !important;
 }
+
 
 .biography h1 {
     font-size: 55px;

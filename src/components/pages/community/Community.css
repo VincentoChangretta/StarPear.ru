@@ -5,6 +5,10 @@
     gap: 50px;
 }
 
+.community__main {
+    text-wrap: pretty;
+}
+
 .community__header .text {
     margin-top: 100px;
 }
@@ -46,56 +50,77 @@
     align-items: stretch;
 }
 
-.community__advantages-advantages, .community__advantages-price {
+.community__advantages-advantages,
+.community__advantages-price {
     max-width: 48%;
 }
 
-.community__advantages-advantages li, .community__advantages-price p {
+.community__advantages-advantages li,
+.community__advantages-price p {
     margin-bottom: 30px;
 }
 
-@media(width <= 1400px){
-    .community__info .text{
+.community-btn {
+    max-width: 350px;
+    text-wrap: balance;
+    text-align: center;
+}
+
+@media(width <=1400px) {
+    .community__info .text {
         max-width: 800px !important;
     }
 }
-@media(width <= 1200px){
-    .community__info .text{
+
+@media(width <=1200px) {
+    .community__header {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 150px !important;
+    }
+
+    .community__header .text {
+        margin-top: 50px;
+    }
+
+    .community__info .text {
         max-width: 700px !important;
     }
 }
-@media(width <= 1050px){
+
+@media(width <=1050px) {
     .community__info .text {
         max-width: 500px !important;
     }
 }
-@media(width <= 1000px){
-    .course-page__programm-img{
+
+@media(width <=1000px) {
+    .course-page__programm-img {
         display: none;
     }
 }
 
-@media(width <= 900px){
-    .community__info{
-        flex-wrap: wrap-reverse; 
+@media(width <=900px) {
+    .community__info {
+        flex-wrap: wrap-reverse;
         justify-content: center;
     }
+
     .community__info .text {
         max-width: 100% !important;
     }
-    .community__header{
-        flex-wrap: wrap;
-        justify-content: center;
-        margin-bottom: 150px !important; 
-    }
-    .community__advantages{
+
+
+
+    .community__advantages {
         gap: 30px;
-        flex-wrap: wrap; 
+        flex-wrap: wrap;
     }
-    .community__advantages-advantages, .community__advantages-price{
+
+    .community__advantages-advantages,
+    .community__advantages-price {
         max-width: 100%;
     }
-    .community__header .text{
-        margin-top: 50px;
-    }
+
+
 }

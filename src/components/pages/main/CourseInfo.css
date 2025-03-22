@@ -2,6 +2,10 @@
     padding-bottom: 75px;
 }
 
+.course-info h2 {
+    text-align: left !important;
+}
+
 .course-info__inner {
     display: flex;
     justify-content: space-between;
@@ -26,21 +30,24 @@
     gap: 30px;
 }
 
-@media(width <= 1360px){
-    .main section .course-info__inner .text{
+@media(width <=1360px) {
+    .main section .course-info__inner .text {
         max-width: 55%;
     }
 }
-@media(width <= 1050px){
-    .course-info__inner{
-        flex-wrap: wrap-reverse; 
+
+@media(width <=1050px) {
+    .course-info__inner {
+        flex-wrap: wrap-reverse;
         position: relative;
     }
-    .main section .course-info__inner .text{
+
+    .main section .course-info__inner .text {
         max-width: 100%;
         position: relative;
         z-index: 50;
     }
+
     .course-info__img {
         max-width: 480px;
         top: -125px;
@@ -51,22 +58,25 @@
     }
 }
 
-@media(width <= 985px){
-    .course-info__img{
+@media(width <=985px) {
+    .course-info__img {
         top: -90px;
     }
 }
-@media(width <= 795px){
-    .course-info__img{
+
+@media(width <=795px) {
+    .course-info__img {
         top: -20px;
     }
 }
-@media(width <= 570px){
-    .course-info__img{
+
+@media(width <=570px) {
+    .course-info__img {
         display: none;
     }
-    .course-info__buttons{
-        flex-wrap: wrap; 
+
+    .course-info__buttons {
+        flex-wrap: wrap;
         gap: 20px;
     }
 }
