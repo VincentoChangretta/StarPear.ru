@@ -19,6 +19,7 @@ import yandex from './src/images/yandex.webp';
 import telegram from './src/images/telegram.webp';
 import formImg from './src/images/form-img.jpg';
 import philosophy from './src/images/philosophy.png';
+import avatarIcon from './src/images/avatar.png';
 
 export {
    logo,
@@ -42,4 +43,5 @@ export {
    biographyImg,
    formImg,
    philosophy,
+   avatarIcon,
 };

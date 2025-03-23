@@ -1,0 +1,21 @@
+.feedbacks__title {
+    margin-bottom: 180px !important;
+}
+
+.feedbacks__box {
+    display: flex;
+    flex-direction: column;
+    gap: 170px;
+    margin-bottom: 50px;
+}
+
+.your-feedback {
+    text-align: center;
+
+}
+
+@media(width < 450px) {
+    .feedbacks__title {
+        margin-bottom: 130px !important;
+    }
+}

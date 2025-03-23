@@ -12,6 +12,7 @@ import { PrivacyPolicy } from './components/pages/PrivacyPolicy/PrivacyPolicy';
 import { IndividualCoursePage } from './components/pages/IndividualCoursePage/IndividualCoursePage';
 import { CollectiveCoursePage } from './components/pages/IndividualCoursePage/CollectiveCoursePage';
 import { OriginalCoursePage } from './components/pages/IndividualCoursePage/OriginalCoursePage';
+import { Feedbacks } from './components/pages/feedbacks/Feedbacks';
 
 function App() {
    return (
@@ -20,16 +21,17 @@ function App() {
             <Header />
             <main className="main">
                <Routes>
-                  <Route path="/" element={<Main />}></Route>
-                  <Route path="/courses" element={<Courses />}></Route>
-                  <Route path="/courses-group" element={<CollectiveCoursePage />}></Route>
-                  <Route path="/courses-individual" element={<IndividualCoursePage />}></Route>
-                  <Route path="/courses-original" element={<OriginalCoursePage />}></Route>
-                  <Route path="/community" element={<Community />}></Route>
-                  <Route path="/biography" element={<Biography />}></Route>
-                  <Route path="/social-media" element={<Social />}></Route>
-                  <Route path="/registration" element={<Registration />}></Route>
-                  <Route path="/privacy-policy" element={<PrivacyPolicy />}></Route>
+                  <Route path="/" element={<Main />} />
+                  <Route path="/courses" element={<Courses />} />
+                  <Route path="/courses-group" element={<CollectiveCoursePage />} />
+                  <Route path="/courses-individual" element={<IndividualCoursePage />} />
+                  <Route path="/courses-original" element={<OriginalCoursePage />} />
+                  <Route path="/community" element={<Community />} />
+                  <Route path="/biography" element={<Biography />} />
+                  <Route path="/social-media" element={<Social />} />
+                  <Route path="/feedbacks" element={<Feedbacks />} />
+                  <Route path="/registration" element={<Registration />} />
+                  <Route path="/privacy-policy" element={<PrivacyPolicy />} />
                   <Route path="*" element={<Navigate to="/" replace />} />
                </Routes>
             </main>

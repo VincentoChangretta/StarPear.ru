@@ -2,12 +2,15 @@ import Accordion from '@mui/material/Accordion';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import './CoursePageStyles.css';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { philosophy } from '../../../../img';
 import useScrollToTop from '../../../hooks/UseScrollToTop';
 
 export const IndividualCoursePage = () => {
+   const location = useLocation();
    useScrollToTop();
+   console.log(location.pathname);
+
    return (
       <section className="section-with-padding">
          <div className="container">
@@ -347,7 +350,7 @@ export const IndividualCoursePage = () => {
                   </p>
                </div>
                <div className="text">
-                  <Link to="/registration">
+                  <Link to="/feedbacks">
                      <h4 className="link">Отзывы вот тут</h4>
                   </Link>
                </div>
@@ -366,7 +369,7 @@ export const IndividualCoursePage = () => {
                      </li>
                   </ol>
                </div>
-               <Link to="/registration" className="btn">
+               <Link to="/registration" state={{ from: location.pathname }} className="btn">
                   Запись
                </Link>
             </div>
